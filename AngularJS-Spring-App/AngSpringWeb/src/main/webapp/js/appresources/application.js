@@ -49,24 +49,7 @@ function Product( resource ) {
 			scope.product = product;
 		});
 //		alert("id "+id);
-		/*scope.products = [ {
-			'id':1,
-			'name' : 'TCS Mastercraft',
-			'owner' : 'TCS',
-			'price' : '1000'
-		}, {
-			'id':2,
-			'name' : 'Websphere',
-			'owner' : 'IBM',
-			'price' : '2000'
-		},{
-			'id':3,
-			'name':'Weblogic',
-			'owner' : 'Oracle',
-			'price' : '1500'
-		}];
 		
-		scope.product = scope.products[id-1];*/
 	};
 	
 	this.getProducts = function( scope ) {
@@ -77,21 +60,6 @@ function Product( resource ) {
 		Products.query(function(products){
 			scope.products = products;
 		});
-		/*scope.products = [ {
-			'id':1,
-			'name' : 'TCS Mastercraft',
-			'owner' : 'TCS',
-			'price' : '1000'
-		}, {
-			'id':2,
-			'name' : 'Websphere',
-			'owner' : 'IBM',
-			'price' : '2000'
-		},{
-			'id':3,
-			'name':'Weblogic',
-			'owner' : 'Oracle',
-			'price' : '1500'
-		}];*/
+		
 	};
 };
