@@ -1,0 +1,41 @@
+<div style="color: rgb(45, 0, 255);font-weight:bold;">View Product List</div>
+<table border="1" align="center" style="margin: 10px;">
+	<tr>
+		<td colspan="3" align="center">
+			<div>Type to search</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center"><input type="text"
+			ng-model="product" placeholder="All Product"></td>
+	</tr>
+	<tr>
+		<td><input type="text" ng-model="productName.name"
+			placeholder="Product Name"></td>
+		<td><input type="text" ng-model="productName.owner"
+			placeholder="Product Owner"></td>
+		<td><input type="text" ng-model="productName.price"
+			placeholder="Product Price"></td>
+
+	</tr>
+	<tr>
+		<td style="background: lightgrey; font-weight: bold;">Product
+			Name</td>
+		<td style="background: lightgrey; font-weight: bold;">Product
+			Company</td>
+		<td style="background: lightgrey; font-weight: bold;">Product
+			Price</td>
+	</tr>
+	<tr
+		ng-repeat="product in products | filter:productName | filter:product ">
+		<td
+			ng-class="{'oddrowbgcolor':$index%2 !=0 ,'evenrowbgcolor':$index%2 ==0}"><a
+			href="#/product/{{product.pId}}">{{product.name}}</a></td>
+		<td
+			ng-class="{'oddrowbgcolor':$index%2 !=0 ,'evenrowbgcolor':$index%2 ==0}"><a>{{product.owner}}</a></td>
+		<td
+			ng-class="{'oddrowbgcolor':$index%2 !=0 ,'evenrowbgcolor':$index%2 ==0}"><a>{{product.price|currency
+				:"&#8360." }}</a></td>
+
+	</tr>
+</table>

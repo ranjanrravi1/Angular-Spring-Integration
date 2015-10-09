@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>AngularJS Spring Integration</title>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-resource.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+
+<!-- <script type="text/javascript" src="js/ngresources/angular.min.js"></script>
+<script type="text/javascript" src="js/ngresources/angular-resource.min.js"></script>
+<script type="text/javascript" src="js/ngresources/angular-route.min.js"></script>
+ -->
+<script type="text/javascript" src="js/appresources/application.js"></script>
+<script type="text/javascript" src="js/appresources/controllers.js"></script>
+<script type="text/javascript" src="js/appresources/directives.js"></script>
+
+<!-- <link type="text/css" src="css/bootstrap.max.css"> -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<style>
+ul li{
+  display: inline;
+  margin: 10px;
+}
+
+.oddrowbgcolor {
+	background: #E9DDDD;
+}
+
+.evenrowbgcolor {
+	background: #B0D1BF;
+}
+</style>
+
+</head>
+<body>
+<div ng-controller="homeController"></div>
+<h2>This is AngularJS Spring Integration KSS.</h2>
+<my-app-tabs></my-app-tabs>
+
+<div ng-view></div>
+</body>
+</html>
