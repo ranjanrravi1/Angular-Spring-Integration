@@ -1,14 +1,12 @@
 /**
  * 
  */
-package com.tcs.demo;
+package com.demo;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import com.tcs.demo.dto.ProductDTO;
+import com.demo.dto.ProductDTO;
 
 /**
  * @author 492086

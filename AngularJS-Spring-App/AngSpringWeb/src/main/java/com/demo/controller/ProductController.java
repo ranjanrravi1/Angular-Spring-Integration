@@ -1,4 +1,4 @@
-package com.tcs.demo.controller;
+package com.demo.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.tcs.demo.ProductService;
-import com.tcs.demo.dto.ProductDTO;
+import com.demo.ProductService;
+import com.demo.dto.ProductDTO;
 
 @Controller
 public class ProductController {

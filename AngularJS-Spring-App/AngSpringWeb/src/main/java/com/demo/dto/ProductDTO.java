@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.tcs.demo.dto;
+package com.demo.dto;
 
 /**
  * @author 492086
